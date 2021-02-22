@@ -4,7 +4,6 @@ import com.nc.model.Product;
 import com.nc.service.IProductService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,14 +14,10 @@ import java.util.List;
 @RequestMapping("/products")
 public class ProductController {
     private final Logger LOG = LoggerFactory.getLogger(this.getClass());
-    @Autowired
-    private IProductService iProductService;
+    private final IProductService iProductService;
 
-    public ProductController(){
-    }
-
-    public ProductController(IProductService iProductService){
-        //this.iProductService = iProductService;
+    public ProductController(IProductService iProductService) {
+        this.iProductService = iProductService;
     }
 
     @PostMapping
