@@ -21,8 +21,8 @@ spring:
       path: /h2-console
 
 #PORT
-server:
-  port: 8080
+#server:
+#  port: 8083
 
 #LOGGER
 logging:
