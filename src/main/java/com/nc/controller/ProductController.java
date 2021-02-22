@@ -1,5 +1,7 @@
 package com.nc.controller;
 
+import com.nc.common.ProductCategoryRequest;
+import com.nc.common.ProductCategoryResponse;
 import com.nc.model.Product;
 import com.nc.service.IProductService;
 import org.slf4j.Logger;
@@ -11,7 +13,7 @@ import java.util.List;
 
 @CrossOrigin
 @RestController
-@RequestMapping("/products")
+@RequestMapping("/product")
 public class ProductController {
     private final Logger LOG = LoggerFactory.getLogger(this.getClass());
     private final IProductService iProductService;
@@ -21,10 +23,10 @@ public class ProductController {
     }
 
     @PostMapping
-    public ResponseEntity save(@RequestBody Product productObj) {
-        Product product = iProductService.save(productObj);
-        LOG.info("product {}", product);
-        return ResponseEntity.ok(product);
+    public ResponseEntity save(@RequestBody ProductCategoryRequest productCategoryRequest) {
+        ProductCategoryResponse productCategoryResponse = iProductService.save(productCategoryRequest);
+        LOG.info("product {}", productCategoryResponse);
+        return ResponseEntity.ok(productCategoryResponse);
     }
 
     @GetMapping

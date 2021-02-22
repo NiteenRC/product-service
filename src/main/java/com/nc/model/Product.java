@@ -11,6 +11,7 @@ public class Product {
     @GeneratedValue
     private Long id;
     private String productName;
+    private Long categoryId;
 
     public Product() {
     }
@@ -34,5 +35,13 @@ public class Product {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public void setCategoryId(Long categoryId) {
+        this.categoryId = categoryId;
+    }
+
+    public Long getCategoryId() {
+        return categoryId;
     }
 }
