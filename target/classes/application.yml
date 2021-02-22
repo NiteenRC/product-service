@@ -6,7 +6,7 @@ spring:
   #DATABASE
   datasource:
     driverClassName: org.h2.Driver
-    url: jdbc:h2:mem:test_mem005
+    url: jdbc:h2:mem:test_mem010
     initialization-mode: always
   jpa:
     hibernate:
@@ -24,11 +24,3 @@ spring:
 server:
   port: 8080
 
-#LOGGER
-logging:
-  level:
-    root: warn
-    org:
-      springframework:
-        web: DEBUG
-      hibernate: DEBUG

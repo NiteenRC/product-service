@@ -30,7 +30,7 @@ public class ProductServiceTest {
     }
 
     @Test
-    public void shouldReturnAllProducts1() throws Exception {
+    public void shouldSaveProduct() throws Exception {
         Product product1 = new Product(1L, "Apple");
         Product product2 = new Product(2L, "Samsung");
         when(iProductService.save(product1)).thenReturn(product1);
