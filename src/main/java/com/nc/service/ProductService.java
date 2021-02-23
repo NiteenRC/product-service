@@ -26,8 +26,11 @@ public class ProductService implements IProductService {
         Category category = productCategoryRequest.getCategory();
 
         //Category categoryResponse = restTemplate.postForObject("http://localhost:8081/category", category, Category.class);
-        Category categoryResponse = restTemplate.getForObject("http://localhost:8081/category/" + productCategoryRequest.getCategory().getId(), Category.class);
+        Category categoryResponse = restTemplate.getForObject("http://CATEGORY-SERVICE/category/" + productCategoryRequest.getCategory().getId(), Category.class);
 
+        if(categoryResponse == null){
+            return new ProductCategoryResponse(null, null, "ERROR: Category is not Found");
+        }
         product.setCategoryId(categoryResponse.getId());
         Product productResponse = productRepository.save(product);
 

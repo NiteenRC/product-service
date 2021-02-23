@@ -1,7 +1,7 @@
 #APP_NAME
 spring:
   application:
-    name: product-service
+    name: PRODUCT-SERVICE
 
   #DATABASE
   datasource:
@@ -21,8 +21,8 @@ spring:
       path: /h2-console
 
 #PORT
-#server:
-#  port: 8083
+server:
+  port: 8080
 
 #LOGGER
 logging:
@@ -32,3 +32,13 @@ logging:
       springframework:
         web: DEBUG
       hibernate: DEBUG
+
+#EUREKA
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost

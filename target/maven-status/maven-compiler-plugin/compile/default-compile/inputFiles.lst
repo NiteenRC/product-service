@@ -1,0 +1,9 @@
+/Users/niteenchougula/Documents/workspace/IKC/Microservice/product-service/src/main/java/com/nc/ProductApplication.java
+/Users/niteenchougula/Documents/workspace/IKC/Microservice/product-service/src/main/java/com/nc/repositoy/ProductRepository.java
+/Users/niteenchougula/Documents/workspace/IKC/Microservice/product-service/src/main/java/com/nc/service/ProductService.java
+/Users/niteenchougula/Documents/workspace/IKC/Microservice/product-service/src/main/java/com/nc/service/IProductService.java
+/Users/niteenchougula/Documents/workspace/IKC/Microservice/product-service/src/main/java/com/nc/controller/ProductController.java
+/Users/niteenchougula/Documents/workspace/IKC/Microservice/product-service/src/main/java/com/nc/common/ProductCategoryResponse.java
+/Users/niteenchougula/Documents/workspace/IKC/Microservice/product-service/src/main/java/com/nc/common/Category.java
+/Users/niteenchougula/Documents/workspace/IKC/Microservice/product-service/src/main/java/com/nc/common/ProductCategoryRequest.java
+/Users/niteenchougula/Documents/workspace/IKC/Microservice/product-service/src/main/java/com/nc/model/Product.java
